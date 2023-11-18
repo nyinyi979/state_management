@@ -12,8 +12,8 @@ const App = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <Router>
-          <Route path='/' element={<Home />}>Home</Route>
-          <Route path='/players' element={<PlayersPage />}>Players</Route>
+          <Route path='/' Component={Home}>Home</Route>
+          <Route path='/players' Component={PlayersPage}>Players</Route>
         </Router>
       </PersistGate>
     </Provider>
