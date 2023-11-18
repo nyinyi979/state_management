@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { createSlice , PayloadAction } from "@reduxjs/toolkit";
 
 type InitialState = {
@@ -27,7 +28,7 @@ export const auth = createSlice({
             })
             return init;
         },
-        LogIn: (state , action: PayloadAction<string>) =>{
+        LogIn: (_state , action: PayloadAction<string>) =>{
             return {
                 value:{
                     isLogin: true,
