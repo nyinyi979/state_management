@@ -13,8 +13,8 @@ const App = () => {
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />}>Home</Route>
-          <Route path='/players' element={<PlayersPage />}>Players</Route>
+          <Route path='/' Component={Home}>Home</Route>
+          <Route path='/players' Component={PlayersPage}>Players</Route>
         </Routes>
         </BrowserRouter>
       </PersistGate>
