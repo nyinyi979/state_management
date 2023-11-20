@@ -298,7 +298,7 @@ export function Teams(props: {count:number, values: PlayersByTeam[]}) {
                     <div className='join ml-auto mb-2'>
                         <AddPlayerDialog teamID={value.team.id} teamName={value.team.full_name}/>
                         <TeamBoxDialog {...value}/>
-                        <DeleteTeamDialog teamID={value.team.id} teamName={value.team.full_name}/>
+                        {value.team.id !== 10000? <DeleteTeamDialog teamID={value.team.id} teamName={value.team.full_name}/> : ''}
                     </div>
                 </div>
             </div>
