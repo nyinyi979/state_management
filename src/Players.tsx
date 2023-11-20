@@ -682,7 +682,7 @@ export function CreateATeam(){
     }
     return (
         <>
-        <button  className="btn btn-sm rounded-none btn-success" onClick={()=>(document.getElementById('create_dialog') as HTMLDialogElement)!.showModal()}>Create a new team!</button>
+        <button  className="btn md:btn-sm btn-xs rounded-none btn-success" onClick={()=>(document.getElementById('create_dialog') as HTMLDialogElement)!.showModal()}>Create a new team!</button>
         <dialog id={'create_dialog'} className="modal">
           <div className="modal-box">
             <h3 className="font-bold text-lg text-success ml-2">Create a new team?</h3>
