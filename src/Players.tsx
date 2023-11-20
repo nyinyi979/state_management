@@ -308,7 +308,7 @@ export function Teams(props: {count:number, values: PlayersByTeam[]}) {
   return (
     <>
     <div className='text-left'>
-        {loading? '' : teams_info}
+        {teams_info}
     </div>
     <div className='my-4'>
         {full?
