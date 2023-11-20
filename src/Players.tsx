@@ -152,7 +152,7 @@ export function TeamAndPlayer(props: {count:number, values: PlayersByTeam[]}) {
                     <div className='join pb-2 mx-auto md:mx-0 md:ml-auto'>
                         <AddPlayerDialog teamID={value.team.id} teamName={value.team.full_name}/>
                         <TeamBoxDialog {...value}/>
-                        <DeleteTeamDialog teamID={value.team.id} teamName={value.team.full_name}/>
+                       {value.team.id !== 10000 <DeleteTeamDialog teamID={value.team.id} teamName={value.team.full_name}/> : ''}
                     </div>
                 </div>
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 '>
