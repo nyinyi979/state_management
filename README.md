@@ -16,3 +16,6 @@ State management app
 - Redux ( since this is a state management project )
 - Redux Persist ( for persisting data after reload )
 - ReactJS
+
+#Caution
+- if you think there is any error, you can click "Reset data" button on navbar! there shouldn't be any error.
